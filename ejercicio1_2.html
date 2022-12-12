@@ -1,0 +1,24 @@
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 1-1 b</title>
+    </head>
+  <body>
+<script>
+    function conversion () {
+    
+        var faren= document.getElementById("Farenheit").value; 
+        var faren_num= parseFloat (faren);
+        var celsius_num =parseFloat ((faren_num)*1.8)+32; 
+        alert(celsius_num);
+        document.getElementById("Solucion"). innerHTML="La solucion es";
+
+    }
+</script>
+Farenheit: <input type="text" id="Farenheit"> </br>
+<!--<input type="text" id="Celsius">-->
+<input type="button" value="calcular" onclick="conversion()"> 
+</body>
+</html>

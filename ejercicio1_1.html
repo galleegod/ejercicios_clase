@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1-1 b</title>
+</head>
+<body>
+    <style>
+        #mensaje{
+            background-color: red;
+            color:white;
+            font-size: 50px;
+        }
+    </style>
+    <div id="mensaje"></div>
+    <script>
+        function total_segundos(hora, minutos, segundos){
+            return hora*3600 + minutos*60 + segundos;
+        }
+        var today = new Date();
+        var hora = today.getHours();
+        var minutos = today.getMinutes();
+        var segundos = today.getSeconds();
+        document.getElementById("mensaje").innerHTML = "Son las " + hora + ":" + minutos + ":" + segundos + "<br> Han trascurido "+ total_segundos(hora, minutos, segundos) + " segundos.";
+  
+        setInterval("location.reload()",1000);
+    </script>
+
+</body>
+</html>
